@@ -39,6 +39,15 @@ otto-extensions/
 3. Manual rescan commands write metadata snapshots to MemPalace.
 4. Automatic rescans are triggered by `OttoUpdateAgent` after updates.
 
+## GitOps Sync
+- Run `node scripts/gitops-sync.mjs` from the root repository to refresh GitOps metadata in `mempalace/`.
+- This script validates required root/CLI/API scaffolding and then rewrites:
+	- `mempalace/repo-sync-index.json`
+	- `mempalace/repo-commit-metadata.json`
+	- `mempalace/repo-remote-urls.json`
+	- `mempalace/repo-version-metadata.json`
+	- `mempalace/extension-registry-metadata.json`
+
 ## Notes
 - Generators consume command definitions and do not duplicate command business logic.
 - If the command-service scan directory is empty or missing, generators emit warnings and keep tracer-bullet behavior.

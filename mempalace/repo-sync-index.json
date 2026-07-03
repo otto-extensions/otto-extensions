@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T22:01:48.982Z",
+  "generatedAt": "2026-07-03T22:03:07.131Z",
   "organization": "otto-extensions",
   "syncStatus": "synchronized",
   "repositories": [
@@ -7,12 +7,12 @@
       "repository": "otto-extensions",
       "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-extensions",
       "branch": "main",
-      "commit": "b45cd90402014b1ed42408fcd5d1fc157a9e25a0",
+      "commit": "f2bdf14182189fb4069db686d1c5924f9f4c8649",
       "remote": "https://github.com/otto-extensions/otto-extensions.git",
       "remoteUrl": "https://github.com/otto-extensions/otto-extensions",
       "visibility": "PUBLIC",
       "defaultBranch": "main",
-      "workingTreeClean": true,
+      "workingTreeClean": false,
       "synced": true
     },
     {
