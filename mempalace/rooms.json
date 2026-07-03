@@ -35,6 +35,31 @@
       "name": "api-rescan-events",
       "path": "mempalace/api-rescan-events.json",
       "purpose": "API rescan trigger log."
+    },
+    {
+      "name": "repo-sync-index",
+      "path": "mempalace/repo-sync-index.json",
+      "purpose": "Current GitOps synchronization status across root, CLI, and API repositories."
+    },
+    {
+      "name": "repo-commit-metadata",
+      "path": "mempalace/repo-commit-metadata.json",
+      "purpose": "Latest commit references captured during GitOps sync."
+    },
+    {
+      "name": "repo-remote-urls",
+      "path": "mempalace/repo-remote-urls.json",
+      "purpose": "Remote URL and visibility metadata for synchronized repositories."
+    },
+    {
+      "name": "repo-version-metadata",
+      "path": "mempalace/repo-version-metadata.json",
+      "purpose": "Version metadata collected from extension manifests and package files."
+    },
+    {
+      "name": "extension-registry-metadata",
+      "path": "mempalace/extension-registry-metadata.json",
+      "purpose": "Derived metadata summary for the extension registry."
     }
   ]
 }

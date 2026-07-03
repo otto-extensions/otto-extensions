@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-07-03T22:01:06.871Z",
+  "registryPath": "/Users/dev-macbook/otto-extensions-workspace/otto-extensions/registry/extension-registry.json",
+  "extensionCount": 2,
+  "extensionIds": [
+    "otto.cli.extension",
+    "otto.api.extension"
+  ],
+  "schemaVersion": "1.0.0"
+}

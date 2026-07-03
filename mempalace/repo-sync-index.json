@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-07-03T22:01:06.871Z",
+  "organization": "otto-extensions",
+  "syncStatus": "synchronized",
+  "repositories": [
+    {
+      "repository": "otto-extensions",
+      "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-extensions",
+      "branch": "main",
+      "commit": "6f97ed608b81b8f7a06387c0efcd9e3fbd09c94f",
+      "remote": "https://github.com/otto-extensions/otto-extensions.git",
+      "visibility": "PUBLIC",
+      "remoteUrl": "https://github.com/otto-extensions/otto-extensions",
+      "defaultBranch": "main",
+      "workingTreeClean": true,
+      "synced": true
+    },
+    {
+      "repository": "otto-cli-extension",
+      "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-cli-extension",
+      "branch": "main",
+      "commit": "26e8244f4a3ef1216ad741a989e32581df35b20e",
+      "remote": "https://github.com/otto-extensions/otto-cli-extension.git",
+      "visibility": "PUBLIC",
+      "remoteUrl": "https://github.com/otto-extensions/otto-cli-extension",
+      "defaultBranch": "main",
+      "workingTreeClean": true,
+      "synced": true
+    },
+    {
+      "repository": "otto-api-extension",
+      "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-api-extension",
+      "branch": "main",
+      "commit": "adba73ed45ee711487505eec70f201ecd82da207",
+      "remote": "https://github.com/otto-extensions/otto-api-extension.git",
+      "visibility": "PUBLIC",
+      "remoteUrl": "https://github.com/otto-extensions/otto-api-extension",
+      "defaultBranch": "main",
+      "workingTreeClean": true,
+      "synced": true
+    }
+  ]
+}
