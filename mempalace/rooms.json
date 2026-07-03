@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "rooms": [
+    {
+      "name": "extension-registry",
+      "path": "registry/extension-registry.json",
+      "purpose": "Maps Otto extension repositories to manifests and agent instructions."
+    },
+    {
+      "name": "cli-command-index",
+      "path": "mempalace/cli-command-index.json",
+      "purpose": "Latest scanned command index for the CLI extension."
+    },
+    {
+      "name": "cli-generation-history",
+      "path": "mempalace/cli-generation-history.json",
+      "purpose": "Historical CLI generation snapshots."
+    },
+    {
+      "name": "cli-rescan-events",
+      "path": "mempalace/cli-rescan-events.json",
+      "purpose": "CLI rescan trigger log."
+    },
+    {
+      "name": "api-endpoint-index",
+      "path": "mempalace/api-endpoint-index.json",
+      "purpose": "Latest scanned endpoint index for the API extension."
+    },
+    {
+      "name": "api-generation-history",
+      "path": "mempalace/api-generation-history.json",
+      "purpose": "Historical API generation snapshots."
+    },
+    {
+      "name": "api-rescan-events",
+      "path": "mempalace/api-rescan-events.json",
+      "purpose": "API rescan trigger log."
+    }
+  ]
+}

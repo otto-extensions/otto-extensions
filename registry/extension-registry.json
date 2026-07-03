@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-03T00:00:00.000Z",
+  "extensions": [
+    {
+      "id": "otto.cli.extension",
+      "name": "Otto CLI Extension",
+      "repository": "otto-extensions/otto-cli-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoCLIExtensionAgent.md",
+      "mempalaceRooms": [
+        "cli-command-index",
+        "cli-generation-history",
+        "cli-rescan-events"
+      ]
+    },
+    {
+      "id": "otto.api.extension",
+      "name": "Otto API Extension",
+      "repository": "otto-extensions/otto-api-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoAPIExtensionAgent.md",
+      "mempalaceRooms": [
+        "api-endpoint-index",
+        "api-generation-history",
+        "api-rescan-events"
+      ]
+    }
+  ]
+}
