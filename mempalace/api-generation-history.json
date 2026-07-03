@@ -1,0 +1,20 @@
+[
+  {
+    "at": "2026-07-03T20:20:45.550Z",
+    "trigger": "manual",
+    "source": "user",
+    "endpointCount": 0,
+    "warnings": [
+      "Command service path not found: /Users/dev-macbook/otto-command-service/src/commands"
+    ],
+    "snapshot": {
+      "updatedAt": "2026-07-03T20:20:45.550Z",
+      "version": "0.1.0",
+      "scannedPath": "/Users/dev-macbook/otto-command-service/src/commands",
+      "warnings": [
+        "Command service path not found: /Users/dev-macbook/otto-command-service/src/commands"
+      ],
+      "endpoints": []
+    }
+  }
+]
