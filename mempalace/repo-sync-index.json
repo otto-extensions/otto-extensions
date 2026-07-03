@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T22:03:07.131Z",
+  "generatedAt": "2026-07-03T23:20:30.421Z",
   "organization": "otto-extensions",
   "syncStatus": "synchronized",
   "repositories": [
@@ -7,7 +7,7 @@
       "repository": "otto-extensions",
       "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-extensions",
       "branch": "main",
-      "commit": "f2bdf14182189fb4069db686d1c5924f9f4c8649",
+      "commit": "28525927d4939319410ab0b877b76c1367507b62",
       "remote": "https://github.com/otto-extensions/otto-extensions.git",
       "remoteUrl": "https://github.com/otto-extensions/otto-extensions",
       "visibility": "PUBLIC",
@@ -38,6 +38,30 @@
       "defaultBranch": "main",
       "workingTreeClean": true,
       "synced": true
+    },
+    {
+      "repository": "otto-auth-extension",
+      "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-auth-extension",
+      "branch": "main",
+      "commit": "60309d166873251a4e287296bc959e033fca6e4d",
+      "remote": "https://github.com/otto-extensions/otto-auth-extension.git",
+      "remoteUrl": "https://github.com/otto-extensions/otto-auth-extension",
+      "visibility": "PUBLIC",
+      "defaultBranch": "main",
+      "workingTreeClean": true,
+      "synced": true
+    },
+    {
+      "repository": "otto-telemetry-extension",
+      "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-telemetry-extension",
+      "branch": null,
+      "commit": null,
+      "remote": null,
+      "remoteUrl": null,
+      "visibility": null,
+      "defaultBranch": null,
+      "workingTreeClean": true,
+      "synced": false
     }
   ]
 }

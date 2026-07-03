@@ -25,6 +25,32 @@
         "api-generation-history",
         "api-rescan-events"
       ]
+    },
+    {
+      "id": "otto.auth.extension",
+      "name": "Otto Auth Extension",
+      "repository": "otto-extensions/otto-auth-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoAuthExtensionAgent.md",
+      "mempalaceRooms": [
+        "auth-provider-index",
+        "auth-generation-history",
+        "auth-rescan-events"
+      ]
+    },
+    {
+      "id": "otto.telemetry.extension",
+      "name": "Otto Telemetry Extension",
+      "repository": "otto-extensions/otto-telemetry-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoTelemetryExtensionAgent.md",
+      "mempalaceRooms": [
+        "telemetry-operation-index",
+        "telemetry-history",
+        "telemetry-rescan-events",
+        "throughput-history",
+        "eta-history"
+      ]
     }
   ]
 }

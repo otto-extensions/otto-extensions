@@ -1,0 +1,17 @@
+{
+  "updatedAt": "2026-07-03T00:00:00.000Z",
+  "manifestPath": "/Users/dev-macbook/otto-extensions-workspace/otto-auth-extension/manifests/providers.json",
+  "payloadManifestPath": null,
+  "availableProviderIds": [
+    "jwt",
+    "google",
+    "microsoft",
+    "github",
+    "apple"
+  ],
+  "selectedProviderIds": [],
+  "loadedProviders": [],
+  "warnings": [
+    "No auth providers were selected in the Otto payload manifest."
+  ]
+}

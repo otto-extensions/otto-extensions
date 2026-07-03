@@ -19,6 +19,7 @@ These instructions apply to the Otto extension ecosystem root and to extension r
 - `otto-extensions`: global instruction anchor, agent home, registry, and MemPalace room map.
 - `otto-cli-extension`: CLI generation and routing for command-service definitions.
 - `otto-api-extension`: API endpoint generation and routing for command-service definitions.
+- `otto-auth-extension`: payload-selected auth provider generation, routing, and metadata persistence.
 
 ## Quality Bar
 - Keep scaffolding DRY, SOLID, and pragmatic.

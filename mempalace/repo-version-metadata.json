@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T22:03:07.131Z",
+  "generatedAt": "2026-07-03T23:20:30.421Z",
   "versions": [
     {
       "repository": "otto-extensions",
@@ -13,6 +13,16 @@
     },
     {
       "repository": "otto-api-extension",
+      "manifestVersion": "0.1.0",
+      "packageVersion": "0.1.0"
+    },
+    {
+      "repository": "otto-auth-extension",
+      "manifestVersion": "0.1.0",
+      "packageVersion": "0.1.0"
+    },
+    {
+      "repository": "otto-telemetry-extension",
       "manifestVersion": "0.1.0",
       "packageVersion": "0.1.0"
     }

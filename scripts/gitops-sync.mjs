@@ -13,13 +13,17 @@ const rootRepo = path.join(workspaceRoot, "otto-extensions");
 const repositories = [
   { name: "otto-extensions", localPath: path.join(workspaceRoot, "otto-extensions") },
   { name: "otto-cli-extension", localPath: path.join(workspaceRoot, "otto-cli-extension") },
-  { name: "otto-api-extension", localPath: path.join(workspaceRoot, "otto-api-extension") }
+  { name: "otto-api-extension", localPath: path.join(workspaceRoot, "otto-api-extension") },
+  { name: "otto-auth-extension", localPath: path.join(workspaceRoot, "otto-auth-extension") },
+  { name: "otto-telemetry-extension", localPath: path.join(workspaceRoot, "otto-telemetry-extension") }
 ];
 
 const requiredFiles = [
   "otto-extensions/copilot-instructions.md",
   "otto-extensions/agents/OttoCLIExtensionAgent.md",
   "otto-extensions/agents/OttoAPIExtensionAgent.md",
+  "otto-extensions/agents/OttoAuthExtensionAgent.md",
+  "otto-extensions/agents/OttoTelemetryExtensionAgent.md",
   "otto-extensions/registry/extension-registry.json",
   "otto-cli-extension/manifests/extension.json",
   "otto-cli-extension/src/cli-generator.ts",
@@ -30,7 +34,20 @@ const requiredFiles = [
   "otto-api-extension/src/api-generator.ts",
   "otto-api-extension/src/api-router.ts",
   "otto-api-extension/src/api-schemas.ts",
-  "otto-api-extension/src/api-rescan.ts"
+  "otto-api-extension/src/api-rescan.ts",
+  "otto-auth-extension/manifests/extension.json",
+  "otto-auth-extension/manifests/providers.json",
+  "otto-auth-extension/src/auth-core.ts",
+  "otto-auth-extension/src/provider-loader.ts",
+  "otto-auth-extension/src/auth-rescan.ts",
+  "otto-telemetry-extension/manifests/extension.json",
+  "otto-telemetry-extension/manifests/telemetry-providers.json",
+  "otto-telemetry-extension/src/telemetry-core.ts",
+  "otto-telemetry-extension/src/progress-tracker.ts",
+  "otto-telemetry-extension/src/eta-calculator.ts",
+  "otto-telemetry-extension/src/throughput-calculator.ts",
+  "otto-telemetry-extension/src/provider-loader.ts",
+  "otto-telemetry-extension/src/telemetry-rescan.ts"
 ];
 
 function run(command, cwd) {
@@ -40,6 +57,14 @@ function run(command, cwd) {
   })
     .toString()
     .trim();
+}
+
+function runOrNull(command, cwd) {
+  try {
+    return run(command, cwd);
+  } catch {
+    return null;
+  }
 }
 
 function readJson(filePath) {
@@ -96,16 +121,17 @@ function buildRepositoryState(now) {
   };
 
   for (const repository of repositories) {
-    const branch = run("git rev-parse --abbrev-ref HEAD", repository.localPath);
-    const commit = run("git rev-parse HEAD", repository.localPath);
-    const remote = run("git remote get-url origin", repository.localPath);
-    const status = run("git status --short", repository.localPath);
-    const remoteInfo = JSON.parse(
-      run(
-        `gh repo view otto-extensions/${repository.name} --json url,visibility,defaultBranchRef`,
-        repository.localPath
-      )
-    );
+    const branch = runOrNull("git rev-parse --abbrev-ref HEAD", repository.localPath);
+    const commit = runOrNull("git rev-parse --verify HEAD", repository.localPath);
+    const remote = runOrNull("git remote get-url origin", repository.localPath);
+    const status = runOrNull("git status --short", repository.localPath) ?? "";
+    const remoteInfoRaw = remote
+      ? runOrNull(
+          `gh repo view otto-extensions/${repository.name} --json url,visibility,defaultBranchRef`,
+          repository.localPath
+        )
+      : null;
+    const remoteInfo = remoteInfoRaw ? JSON.parse(remoteInfoRaw) : null;
 
     const manifestPath = path.join(repository.localPath, "manifests", "extension.json");
     const packagePath = path.join(repository.localPath, "package.json");
@@ -116,11 +142,11 @@ function buildRepositoryState(now) {
       branch,
       commit,
       remote,
-      remoteUrl: remoteInfo.url,
-      visibility: remoteInfo.visibility,
-      defaultBranch: remoteInfo.defaultBranchRef?.name ?? null,
+      remoteUrl: remoteInfo?.url ?? null,
+      visibility: remoteInfo?.visibility ?? null,
+      defaultBranch: remoteInfo?.defaultBranchRef?.name ?? null,
       workingTreeClean: status.length === 0,
-      synced: true
+      synced: Boolean(branch && commit && remoteInfo)
     });
 
     commitMetadata.commits.push({
@@ -134,9 +160,9 @@ function buildRepositoryState(now) {
       repository: repository.name,
       remote: "origin",
       url: remote,
-      publicUrl: remoteInfo.url,
-      visibility: remoteInfo.visibility,
-      defaultBranch: remoteInfo.defaultBranchRef?.name ?? null
+      publicUrl: remoteInfo?.url ?? null,
+      visibility: remoteInfo?.visibility ?? null,
+      defaultBranch: remoteInfo?.defaultBranchRef?.name ?? null
     });
 
     versionMetadata.versions.push({

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T22:03:07.131Z",
+  "generatedAt": "2026-07-03T23:20:30.421Z",
   "remotes": [
     {
       "repository": "otto-extensions",
@@ -24,6 +24,22 @@
       "publicUrl": "https://github.com/otto-extensions/otto-api-extension",
       "visibility": "PUBLIC",
       "defaultBranch": "main"
+    },
+    {
+      "repository": "otto-auth-extension",
+      "remote": "origin",
+      "url": "https://github.com/otto-extensions/otto-auth-extension.git",
+      "publicUrl": "https://github.com/otto-extensions/otto-auth-extension",
+      "visibility": "PUBLIC",
+      "defaultBranch": "main"
+    },
+    {
+      "repository": "otto-telemetry-extension",
+      "remote": "origin",
+      "url": null,
+      "publicUrl": null,
+      "visibility": null,
+      "defaultBranch": null
     }
   ]
 }

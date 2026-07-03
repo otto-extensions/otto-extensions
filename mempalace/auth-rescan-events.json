@@ -1,0 +1,11 @@
+[
+  {
+    "at": "2026-07-03T00:00:00.000Z",
+    "trigger": "manual",
+    "source": "user",
+    "providerCount": 0,
+    "warnings": [
+      "No auth providers were selected in the Otto payload manifest."
+    ]
+  }
+]

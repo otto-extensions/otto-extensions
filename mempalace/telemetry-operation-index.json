@@ -1,0 +1,10 @@
+{
+  "updatedAt": "2026-07-03T23:16:06.602Z",
+  "selectedProviderIds": [
+    "otto-logging",
+    "otto-tracing",
+    "otto-metrics"
+  ],
+  "activeOperations": [],
+  "warnings": []
+}

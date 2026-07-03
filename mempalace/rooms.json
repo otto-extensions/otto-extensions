@@ -37,9 +37,49 @@
       "purpose": "API rescan trigger log."
     },
     {
+      "name": "auth-provider-index",
+      "path": "mempalace/auth-provider-index.json",
+      "purpose": "Latest selected auth provider index for the auth extension."
+    },
+    {
+      "name": "auth-generation-history",
+      "path": "mempalace/auth-generation-history.json",
+      "purpose": "Historical auth generation snapshots."
+    },
+    {
+      "name": "auth-rescan-events",
+      "path": "mempalace/auth-rescan-events.json",
+      "purpose": "Auth rescan trigger log."
+    },
+    {
+      "name": "telemetry-operation-index",
+      "path": "mempalace/telemetry-operation-index.json",
+      "purpose": "Latest telemetry operation snapshot across tracked long-running work."
+    },
+    {
+      "name": "telemetry-history",
+      "path": "mempalace/telemetry-history.json",
+      "purpose": "Historical telemetry snapshots captured during rescans."
+    },
+    {
+      "name": "telemetry-rescan-events",
+      "path": "mempalace/telemetry-rescan-events.json",
+      "purpose": "Telemetry rescan trigger log."
+    },
+    {
+      "name": "throughput-history",
+      "path": "mempalace/throughput-history.json",
+      "purpose": "Historical throughput samples for tracked operations."
+    },
+    {
+      "name": "eta-history",
+      "path": "mempalace/eta-history.json",
+      "purpose": "Historical ETA snapshots for tracked operations."
+    },
+    {
       "name": "repo-sync-index",
       "path": "mempalace/repo-sync-index.json",
-      "purpose": "Current GitOps synchronization status across root, CLI, and API repositories."
+      "purpose": "Current GitOps synchronization status across all managed extension repositories."
     },
     {
       "name": "repo-commit-metadata",

@@ -1,23 +1,35 @@
 {
-  "generatedAt": "2026-07-03T22:03:07.131Z",
+  "generatedAt": "2026-07-03T23:20:30.421Z",
   "commits": [
     {
       "repository": "otto-extensions",
       "branch": "main",
-      "commit": "f2bdf14182189fb4069db686d1c5924f9f4c8649",
-      "capturedAt": "2026-07-03T22:03:07.131Z"
+      "commit": "28525927d4939319410ab0b877b76c1367507b62",
+      "capturedAt": "2026-07-03T23:20:30.421Z"
     },
     {
       "repository": "otto-cli-extension",
       "branch": "main",
       "commit": "26e8244f4a3ef1216ad741a989e32581df35b20e",
-      "capturedAt": "2026-07-03T22:03:07.131Z"
+      "capturedAt": "2026-07-03T23:20:30.421Z"
     },
     {
       "repository": "otto-api-extension",
       "branch": "main",
       "commit": "adba73ed45ee711487505eec70f201ecd82da207",
-      "capturedAt": "2026-07-03T22:03:07.131Z"
+      "capturedAt": "2026-07-03T23:20:30.421Z"
+    },
+    {
+      "repository": "otto-auth-extension",
+      "branch": "main",
+      "commit": "60309d166873251a4e287296bc959e033fca6e4d",
+      "capturedAt": "2026-07-03T23:20:30.421Z"
+    },
+    {
+      "repository": "otto-telemetry-extension",
+      "branch": null,
+      "commit": null,
+      "capturedAt": "2026-07-03T23:20:30.421Z"
     }
   ]
 }
