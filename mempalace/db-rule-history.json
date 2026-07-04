@@ -1,0 +1,27 @@
+[
+  {
+    "at": "2026-07-03T23:42:25.159Z",
+    "trigger": "automatic",
+    "source": "OttoUpdateAgent",
+    "rules": [
+      {
+        "id": "require-auth",
+        "description": "Require authenticated access for write operations.",
+        "scope": "global",
+        "enabled": true,
+        "config": {
+          "write": "auth != null"
+        }
+      },
+      {
+        "id": "read-throttling",
+        "description": "Throttle broad read operations for cost control.",
+        "scope": "global",
+        "enabled": true,
+        "config": {
+          "maxReadsPerMinute": 1200
+        }
+      }
+    ]
+  }
+]

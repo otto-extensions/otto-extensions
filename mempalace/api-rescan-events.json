@@ -7,5 +7,14 @@
     "warnings": [
       "Command service path not found: /Users/dev-macbook/otto-command-service/src/commands"
     ]
+  },
+  {
+    "at": "2026-07-04T00:02:29.717Z",
+    "trigger": "automatic",
+    "source": "OttoUpdateAgent",
+    "endpointCount": 0,
+    "warnings": [
+      "Command service path not found: /Users/dev-macbook/otto-extensions-workspace/otto-command-service/src/commands"
+    ]
   }
 ]

@@ -1,0 +1,102 @@
+{
+  "updatedAt": "2026-07-03T23:45:26.986Z",
+  "manifestPath": "/Users/dev-macbook/otto-extensions-workspace/otto-communication-safety-extension/manifests/safety-providers.json",
+  "payloadManifestPath": null,
+  "availableProviderIds": [
+    "leaky-bucket",
+    "token-bucket",
+    "fixed-window",
+    "sliding-window",
+    "circuit-breaker",
+    "retry-strategy",
+    "backoff-strategy",
+    "anti-thundering-herd",
+    "connection-pooling",
+    "request-deduplication"
+  ],
+  "selectedProviderIds": [
+    "leaky-bucket",
+    "token-bucket",
+    "fixed-window",
+    "sliding-window",
+    "circuit-breaker",
+    "retry-strategy",
+    "backoff-strategy",
+    "anti-thundering-herd",
+    "connection-pooling",
+    "request-deduplication"
+  ],
+  "loadedProviders": [
+    {
+      "id": "leaky-bucket",
+      "name": "Leaky Bucket",
+      "kind": "leaky-bucket",
+      "module": "src/leaky-bucket.ts",
+      "description": "Steady drain rate limiting to smooth bursts."
+    },
+    {
+      "id": "token-bucket",
+      "name": "Token Bucket",
+      "kind": "token-bucket",
+      "module": "src/token-bucket.ts",
+      "description": "Burst-tolerant rate limiting using refillable tokens."
+    },
+    {
+      "id": "fixed-window",
+      "name": "Fixed Window",
+      "kind": "fixed-window",
+      "module": "src/fixed-window.ts",
+      "description": "Simple fixed interval request cap."
+    },
+    {
+      "id": "sliding-window",
+      "name": "Sliding Window",
+      "kind": "sliding-window",
+      "module": "src/sliding-window.ts",
+      "description": "Moving window rate limiting with smoother boundaries."
+    },
+    {
+      "id": "circuit-breaker",
+      "name": "Circuit Breaker",
+      "kind": "circuit-breaker",
+      "module": "src/circuit-breaker.ts",
+      "description": "Fast-fail protection during downstream instability."
+    },
+    {
+      "id": "retry-strategy",
+      "name": "Retry Strategy",
+      "kind": "retry-strategy",
+      "module": "src/retry-strategy.ts",
+      "description": "Controlled retries for transient failures."
+    },
+    {
+      "id": "backoff-strategy",
+      "name": "Backoff Strategy",
+      "kind": "backoff-strategy",
+      "module": "src/backoff-strategy.ts",
+      "description": "Progressive delay scheduling for retry pacing."
+    },
+    {
+      "id": "anti-thundering-herd",
+      "name": "Anti-Thundering Herd",
+      "kind": "anti-thundering-herd",
+      "module": "src/anti-thundering-herd.ts",
+      "description": "In-flight sharing and lock hints to collapse stampedes."
+    },
+    {
+      "id": "connection-pooling",
+      "name": "Connection Pooling",
+      "kind": "connection-pooling",
+      "module": "src/anti-thundering-herd.ts",
+      "description": "Reusable connection slots for outbound transport safety."
+    },
+    {
+      "id": "request-deduplication",
+      "name": "Request Deduplication",
+      "kind": "request-deduplication",
+      "module": "src/anti-thundering-herd.ts",
+      "description": "Duplicate request suppression with short-lived cache windows."
+    }
+  ],
+  "warnings": []
+}

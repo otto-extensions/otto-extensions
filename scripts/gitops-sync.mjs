@@ -15,7 +15,9 @@ const repositories = [
   { name: "otto-cli-extension", localPath: path.join(workspaceRoot, "otto-cli-extension") },
   { name: "otto-api-extension", localPath: path.join(workspaceRoot, "otto-api-extension") },
   { name: "otto-auth-extension", localPath: path.join(workspaceRoot, "otto-auth-extension") },
-  { name: "otto-telemetry-extension", localPath: path.join(workspaceRoot, "otto-telemetry-extension") }
+  { name: "otto-telemetry-extension", localPath: path.join(workspaceRoot, "otto-telemetry-extension") },
+  { name: "otto-database-extension", localPath: path.join(workspaceRoot, "otto-database-extension") },
+  { name: "otto-communication-safety-extension", localPath: path.join(workspaceRoot, "otto-communication-safety-extension") }
 ];
 
 const requiredFiles = [
@@ -24,16 +26,14 @@ const requiredFiles = [
   "otto-extensions/agents/OttoAPIExtensionAgent.md",
   "otto-extensions/agents/OttoAuthExtensionAgent.md",
   "otto-extensions/agents/OttoTelemetryExtensionAgent.md",
+  "otto-extensions/agents/OttoDatabaseExtensionAgent.md",
+  "otto-extensions/agents/OttoCommunicationSafetyExtensionAgent.md",
   "otto-extensions/registry/extension-registry.json",
   "otto-cli-extension/manifests/extension.json",
   "otto-cli-extension/src/cli-generator.ts",
-  "otto-cli-extension/src/cli-router.ts",
-  "otto-cli-extension/src/cli-help.ts",
   "otto-cli-extension/src/cli-rescan.ts",
   "otto-api-extension/manifests/extension.json",
   "otto-api-extension/src/api-generator.ts",
-  "otto-api-extension/src/api-router.ts",
-  "otto-api-extension/src/api-schemas.ts",
   "otto-api-extension/src/api-rescan.ts",
   "otto-auth-extension/manifests/extension.json",
   "otto-auth-extension/manifests/providers.json",
@@ -47,7 +47,15 @@ const requiredFiles = [
   "otto-telemetry-extension/src/eta-calculator.ts",
   "otto-telemetry-extension/src/throughput-calculator.ts",
   "otto-telemetry-extension/src/provider-loader.ts",
-  "otto-telemetry-extension/src/telemetry-rescan.ts"
+  "otto-telemetry-extension/src/telemetry-rescan.ts",
+  "otto-database-extension/manifests/extension.json",
+  "otto-database-extension/src/db-core.ts",
+  "otto-database-extension/src/provider-loader.ts",
+  "otto-database-extension/src/db-rescan.ts",
+  "otto-communication-safety-extension/manifests/extension.json",
+  "otto-communication-safety-extension/src/safety-core.ts",
+  "otto-communication-safety-extension/src/provider-loader.ts",
+  "otto-communication-safety-extension/src/safety-rescan.ts"
 ];
 
 function run(command, cwd) {

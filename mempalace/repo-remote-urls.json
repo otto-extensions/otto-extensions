@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T23:20:30.421Z",
+  "generatedAt": "2026-07-04T00:06:01.272Z",
   "remotes": [
     {
       "repository": "otto-extensions",
@@ -35,6 +35,22 @@
     },
     {
       "repository": "otto-telemetry-extension",
+      "remote": "origin",
+      "url": null,
+      "publicUrl": null,
+      "visibility": null,
+      "defaultBranch": null
+    },
+    {
+      "repository": "otto-database-extension",
+      "remote": "origin",
+      "url": null,
+      "publicUrl": null,
+      "visibility": null,
+      "defaultBranch": null
+    },
+    {
+      "repository": "otto-communication-safety-extension",
       "remote": "origin",
       "url": null,
       "publicUrl": null,

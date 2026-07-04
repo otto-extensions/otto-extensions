@@ -77,6 +77,46 @@
       "purpose": "Historical ETA snapshots for tracked operations."
     },
     {
+      "name": "db-provider-index",
+      "path": "mempalace/db-provider-index.json",
+      "purpose": "Latest selected database provider snapshot for the database extension."
+    },
+    {
+      "name": "db-rule-history",
+      "path": "mempalace/db-rule-history.json",
+      "purpose": "Historical database rule snapshots captured during rescans."
+    },
+    {
+      "name": "db-backup-history",
+      "path": "mempalace/db-backup-history.json",
+      "purpose": "Historical database backup configuration snapshots captured during rescans."
+    },
+    {
+      "name": "db-failover-events",
+      "path": "mempalace/db-failover-events.json",
+      "purpose": "Database failover policy snapshots captured during rescans."
+    },
+    {
+      "name": "db-rescan-events",
+      "path": "mempalace/db-rescan-events.json",
+      "purpose": "Database rescan trigger log."
+    },
+    {
+      "name": "safety-provider-index",
+      "path": "mempalace/safety-provider-index.json",
+      "purpose": "Latest selected communication safety provider snapshot."
+    },
+    {
+      "name": "safety-config-history",
+      "path": "mempalace/safety-config-history.json",
+      "purpose": "Historical communication safety configuration snapshots captured during rescans."
+    },
+    {
+      "name": "safety-rescan-events",
+      "path": "mempalace/safety-rescan-events.json",
+      "purpose": "Communication safety rescan trigger log."
+    },
+    {
       "name": "repo-sync-index",
       "path": "mempalace/repo-sync-index.json",
       "purpose": "Current GitOps synchronization status across all managed extension repositories."

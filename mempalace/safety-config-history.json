@@ -1,0 +1,37 @@
+[
+  {
+    "at": "2026-07-03T23:45:26.986Z",
+    "trigger": "automatic",
+    "source": "OttoUpdateAgent",
+    "defaults": {
+      "rateLimit": {
+        "capacity": 20,
+        "refillPerSecond": 10,
+        "windowMs": 1000
+      },
+      "circuitBreaker": {
+        "failureThreshold": 3,
+        "resetTimeoutMs": 5000
+      },
+      "retry": {
+        "maxAttempts": 3
+      },
+      "backoff": {
+        "baseDelayMs": 100,
+        "maxDelayMs": 2000,
+        "jitter": 0.2
+      },
+      "antiHerd": {
+        "ttlMs": 1000,
+        "maxWaiters": 128
+      },
+      "connectionPool": {
+        "maxConnections": 8
+      },
+      "requestDeduplication": {
+        "ttlMs": 500,
+        "cacheSize": 256
+      }
+    }
+  }
+]

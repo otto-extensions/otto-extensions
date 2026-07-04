@@ -51,6 +51,32 @@
         "throughput-history",
         "eta-history"
       ]
+    },
+    {
+      "id": "otto.database.extension",
+      "name": "Otto Database Extension",
+      "repository": "otto-extensions/otto-database-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoDatabaseExtensionAgent.md",
+      "mempalaceRooms": [
+        "db-provider-index",
+        "db-rule-history",
+        "db-backup-history",
+        "db-failover-events",
+        "db-rescan-events"
+      ]
+    },
+    {
+      "id": "otto.communication.safety.extension",
+      "name": "Otto Communication Safety Extension",
+      "repository": "otto-extensions/otto-communication-safety-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoCommunicationSafetyExtensionAgent.md",
+      "mempalaceRooms": [
+        "safety-provider-index",
+        "safety-config-history",
+        "safety-rescan-events"
+      ]
     }
   ]
 }

@@ -10,9 +10,9 @@ This repository is the root coordination layer for the Otto extension ecosystem.
 
 ## Repositories
 - `otto-extensions/otto-extensions`: ecosystem root and registry.
-- `otto-extensions/otto-cli-extension`: command-service-driven CLI generation and routing.
-- `otto-extensions/otto-api-extension`: command-service-driven API generation and routing.
-- `otto-extensions/otto-auth-extension`: payload-selected auth provider generation and routing.
+- `otto-extensions/otto-cli-extension`: command-service-driven CLI generation metadata.
+- `otto-extensions/otto-api-extension`: command-service-driven API generation metadata.
+- `otto-extensions/otto-auth-extension`: payload-selected auth provider generation metadata.
 
 ## Root Layout
 ```
@@ -39,8 +39,8 @@ otto-extensions/
 
 ## Generation Flow
 1. Extension generators scan their configured source roots.
-2. CLI, API, or auth artifacts are regenerated from discovered metadata.
-3. Manual rescan commands write metadata snapshots to MemPalace.
+2. CLI, API, or auth artifacts are regenerated from discovered command metadata.
+3. Manual rescan command execution writes metadata snapshots to MemPalace.
 4. Automatic rescans are triggered by `OttoUpdateAgent` after updates.
 
 ## GitOps Sync

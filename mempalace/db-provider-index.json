@@ -1,0 +1,77 @@
+{
+  "updatedAt": "2026-07-03T23:42:25.159Z",
+  "manifestPath": "/Users/dev-macbook/otto-extensions-workspace/otto-database-extension/manifests/db-providers.json",
+  "payloadManifestPath": null,
+  "availableProviderIds": [
+    "firebase-firestore",
+    "firebase-rtdb",
+    "azure-cosmos",
+    "azure-sql",
+    "indexeddb",
+    "postgres-placeholder",
+    "mongodb-placeholder"
+  ],
+  "selectedProviderIds": [
+    "firebase-firestore",
+    "firebase-rtdb",
+    "azure-cosmos",
+    "azure-sql",
+    "indexeddb",
+    "postgres-placeholder",
+    "mongodb-placeholder"
+  ],
+  "loadedProviders": [
+    {
+      "id": "firebase-firestore",
+      "name": "Firebase Firestore",
+      "kind": "firebase-firestore",
+      "module": "src/firebase-provider.ts",
+      "description": "Firebase Firestore provider for document-oriented cloud workloads."
+    },
+    {
+      "id": "firebase-rtdb",
+      "name": "Firebase Realtime Database",
+      "kind": "firebase-rtdb",
+      "module": "src/firebase-rtdb-provider.ts",
+      "description": "Firebase RTDB provider for low-latency synchronized state."
+    },
+    {
+      "id": "azure-cosmos",
+      "name": "Azure Cosmos DB",
+      "kind": "azure-cosmos",
+      "module": "src/azure-cosmos-provider.ts",
+      "description": "Azure Cosmos DB provider for globally distributed document data."
+    },
+    {
+      "id": "azure-sql",
+      "name": "Azure SQL",
+      "kind": "azure-sql",
+      "module": "src/azure-sql-provider.ts",
+      "description": "Azure SQL provider for relational workloads."
+    },
+    {
+      "id": "indexeddb",
+      "name": "Local IndexedDB",
+      "kind": "indexeddb",
+      "module": "src/indexeddb-provider.ts",
+      "description": "Local IndexedDB provider for offline browser storage."
+    },
+    {
+      "id": "postgres-placeholder",
+      "name": "PostgreSQL Placeholder",
+      "kind": "placeholder",
+      "module": "placeholder",
+      "placeholder": true,
+      "description": "Placeholder provider slot for future PostgreSQL integration."
+    },
+    {
+      "id": "mongodb-placeholder",
+      "name": "MongoDB Placeholder",
+      "kind": "placeholder",
+      "module": "placeholder",
+      "placeholder": true,
+      "description": "Placeholder provider slot for future MongoDB integration."
+    }
+  ],
+  "warnings": []
+}

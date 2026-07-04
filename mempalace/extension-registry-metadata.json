@@ -1,12 +1,14 @@
 {
-  "generatedAt": "2026-07-03T23:20:30.421Z",
+  "generatedAt": "2026-07-04T00:06:01.272Z",
   "registryPath": "/Users/dev-macbook/otto-extensions-workspace/otto-extensions/registry/extension-registry.json",
-  "extensionCount": 4,
+  "extensionCount": 6,
   "extensionIds": [
     "otto.cli.extension",
     "otto.api.extension",
     "otto.auth.extension",
-    "otto.telemetry.extension"
+    "otto.telemetry.extension",
+    "otto.database.extension",
+    "otto.communication.safety.extension"
   ],
   "schemaVersion": "1.0.0"
 }

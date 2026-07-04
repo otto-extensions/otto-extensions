@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T23:20:30.421Z",
+  "generatedAt": "2026-07-04T00:06:01.272Z",
   "organization": "otto-extensions",
   "syncStatus": "synchronized",
   "repositories": [
@@ -7,7 +7,7 @@
       "repository": "otto-extensions",
       "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-extensions",
       "branch": "main",
-      "commit": "28525927d4939319410ab0b877b76c1367507b62",
+      "commit": "e135e1a9972d59f7b975b6946521e764e4774f33",
       "remote": "https://github.com/otto-extensions/otto-extensions.git",
       "remoteUrl": "https://github.com/otto-extensions/otto-extensions",
       "visibility": "PUBLIC",
@@ -24,7 +24,7 @@
       "remoteUrl": "https://github.com/otto-extensions/otto-cli-extension",
       "visibility": "PUBLIC",
       "defaultBranch": "main",
-      "workingTreeClean": true,
+      "workingTreeClean": false,
       "synced": true
     },
     {
@@ -36,7 +36,7 @@
       "remoteUrl": "https://github.com/otto-extensions/otto-api-extension",
       "visibility": "PUBLIC",
       "defaultBranch": "main",
-      "workingTreeClean": true,
+      "workingTreeClean": false,
       "synced": true
     },
     {
@@ -48,12 +48,36 @@
       "remoteUrl": "https://github.com/otto-extensions/otto-auth-extension",
       "visibility": "PUBLIC",
       "defaultBranch": "main",
-      "workingTreeClean": true,
+      "workingTreeClean": false,
       "synced": true
     },
     {
       "repository": "otto-telemetry-extension",
       "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-telemetry-extension",
+      "branch": null,
+      "commit": null,
+      "remote": null,
+      "remoteUrl": null,
+      "visibility": null,
+      "defaultBranch": null,
+      "workingTreeClean": true,
+      "synced": false
+    },
+    {
+      "repository": "otto-database-extension",
+      "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-database-extension",
+      "branch": null,
+      "commit": null,
+      "remote": null,
+      "remoteUrl": null,
+      "visibility": null,
+      "defaultBranch": null,
+      "workingTreeClean": true,
+      "synced": false
+    },
+    {
+      "repository": "otto-communication-safety-extension",
+      "localPath": "/Users/dev-macbook/otto-extensions-workspace/otto-communication-safety-extension",
       "branch": null,
       "commit": null,
       "remote": null,
