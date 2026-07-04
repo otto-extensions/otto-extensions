@@ -39,6 +39,18 @@
       ]
     },
     {
+      "id": "otto.data.extension",
+      "name": "Otto Data Extension",
+      "repository": "otto-extensions/otto-data-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoDataExtensionAgent.md",
+      "mempalaceRooms": [
+        "data-blob-index",
+        "data-generation-history",
+        "data-rescan-events"
+      ]
+    },
+    {
       "id": "otto.telemetry.extension",
       "name": "Otto Telemetry Extension",
       "repository": "otto-extensions/otto-telemetry-extension",

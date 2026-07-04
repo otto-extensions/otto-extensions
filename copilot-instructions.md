@@ -20,6 +20,7 @@ These instructions apply to the Otto extension ecosystem root and to extension r
 - `otto-cli-extension`: CLI generation metadata from command-service definitions.
 - `otto-api-extension`: API generation metadata from command-service definitions.
 - `otto-auth-extension`: payload-selected auth provider generation and metadata persistence.
+- `otto-data-extension`: blob creation, zip packaging, compression, extraction, and metadata-plus-blob transfer helpers.
 
 ## Quality Bar
 - Keep scaffolding DRY, SOLID, and pragmatic.

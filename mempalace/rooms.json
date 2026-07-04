@@ -52,6 +52,21 @@
       "purpose": "Auth rescan trigger log."
     },
     {
+      "name": "data-blob-index",
+      "path": "mempalace/data-blob-index.json",
+      "purpose": "Latest data blob transfer snapshot for the data extension."
+    },
+    {
+      "name": "data-generation-history",
+      "path": "mempalace/data-generation-history.json",
+      "purpose": "Historical data transfer snapshots captured during rescans."
+    },
+    {
+      "name": "data-rescan-events",
+      "path": "mempalace/data-rescan-events.json",
+      "purpose": "Data rescan trigger log."
+    },
+    {
       "name": "telemetry-operation-index",
       "path": "mempalace/telemetry-operation-index.json",
       "purpose": "Latest telemetry operation snapshot across tracked long-running work."

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T04:39:55.742Z",
+  "generatedAt": "2026-07-04T21:44:47.886Z",
   "remotes": [
     {
       "repository": "otto-extensions",
@@ -32,6 +32,14 @@
       "publicUrl": "https://github.com/otto-extensions/otto-auth-extension",
       "visibility": "PUBLIC",
       "defaultBranch": "main"
+    },
+    {
+      "repository": "otto-data-extension",
+      "remote": "origin",
+      "url": null,
+      "publicUrl": null,
+      "visibility": null,
+      "defaultBranch": null
     },
     {
       "repository": "otto-telemetry-extension",

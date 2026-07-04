@@ -13,6 +13,7 @@ This repository is the root coordination layer for the Otto extension ecosystem.
 - `otto-extensions/otto-cli-extension`: command-service-driven CLI generation metadata.
 - `otto-extensions/otto-api-extension`: command-service-driven API generation metadata.
 - `otto-extensions/otto-auth-extension`: payload-selected auth provider generation metadata.
+- `otto-extensions/otto-data-extension`: blob transfer, ZIP packaging, and compression helpers.
 
 ## Root Layout
 ```
@@ -20,7 +21,8 @@ otto-extensions/
 ├── copilot-instructions.md
 ├── agents/
 │   ├── OttoCLIExtensionAgent.md
-│   └── OttoAPIExtensionAgent.md
+│   ├── OttoAPIExtensionAgent.md
+│   └── OttoDataExtensionAgent.md
 ├── registry/
 │   └── extension-registry.json
 ├── mempalace/
@@ -33,7 +35,10 @@ otto-extensions/
 │   ├── api-rescan-events.json
 │   ├── auth-provider-index.json
 │   ├── auth-generation-history.json
-│   └── auth-rescan-events.json
+│   ├── auth-rescan-events.json
+│   ├── data-blob-index.json
+│   ├── data-generation-history.json
+│   └── data-rescan-events.json
 └── modules/
 ```
 
