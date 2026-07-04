@@ -25,3 +25,23 @@ These instructions apply to the Otto extension ecosystem root and to extension r
 - Keep scaffolding DRY, SOLID, and pragmatic.
 - Prefer explicit JSON metadata, stable file names, and deterministic generation outputs.
 - Validate the smallest executable slice after each substantive change.
+
+## Architectural Principles
+- Extensions MUST NOT define API or CLI commands.
+- All commands MUST be routed through the Otto Command Service Layer.
+- If coding requires external access, generate ONLY internal commands and rely on the command service layer to expose CLI/API surfaces.
+
+## Forbidden Actions
+- Do not add HTTP servers, routes, REST handlers, or GraphQL handlers in extension repositories.
+- Do not add command-line parsers, shell command entrypoints, or process argument parsing in extension repositories.
+- Do not expose direct API or CLI surfaces from extension modules.
+
+## Command Generation Rules
+- Extensions may define internal command metadata only.
+- Internal command execution MUST route through `commandService.run(commandName, payload)`.
+- Command names and payload contracts must map to command-service definitions and remain deterministic.
+
+## Extension Development Rules
+- Keep extension modules scoped to providers, services, and internal commands.
+- Route external interaction through the Otto Command Service Layer instead of extension-local endpoints.
+- Reject or fail clearly when command-service definitions are missing, empty, or invalid.
