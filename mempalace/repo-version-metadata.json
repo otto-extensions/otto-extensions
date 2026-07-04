@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T00:06:01.272Z",
+  "generatedAt": "2026-07-04T04:39:55.742Z",
   "versions": [
     {
       "repository": "otto-extensions",
@@ -8,18 +8,18 @@
     },
     {
       "repository": "otto-cli-extension",
-      "manifestVersion": "1.7.61",
-      "packageVersion": "1.7.61"
+      "manifestVersion": "1.7.62",
+      "packageVersion": "1.7.62"
     },
     {
       "repository": "otto-api-extension",
-      "manifestVersion": "1.7.61",
-      "packageVersion": "1.7.61"
+      "manifestVersion": "1.7.62",
+      "packageVersion": "1.7.62"
     },
     {
       "repository": "otto-auth-extension",
-      "manifestVersion": "1.7.61",
-      "packageVersion": "1.7.61"
+      "manifestVersion": "1.7.62",
+      "packageVersion": "1.7.62"
     },
     {
       "repository": "otto-telemetry-extension",
