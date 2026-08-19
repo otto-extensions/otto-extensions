@@ -39,6 +39,30 @@
       ]
     },
     {
+      "id": "otto.file.extension",
+      "name": "Otto File Extension",
+      "repository": "otto-extensions/otto-file-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoDataExtensionAgent.md",
+      "mempalaceRooms": [
+        "file-install-index",
+        "file-operation-history",
+        "file-rescan-events"
+      ]
+    },
+    {
+      "id": "otto.debug.extension",
+      "name": "Otto Debug Extension",
+      "repository": "otto-extensions/otto-debug-extension",
+      "manifest": "manifests/extension.json",
+      "agentInstruction": "agents/OttoTelemetryExtensionAgent.md",
+      "mempalaceRooms": [
+        "debug-trace-index",
+        "debug-report-history",
+        "debug-rescan-events"
+      ]
+    },
+    {
       "id": "otto.data.extension",
       "name": "Otto Data Extension",
       "repository": "otto-extensions/otto-data-extension",
